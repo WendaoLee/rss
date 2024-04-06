@@ -1,46 +1,31 @@
 name: RSS to Issue
 
-# 控制工作流程的触发条件
 on:
-  # 手动触发工作流程
-  workflow_dispatch:
-  # 定时触发，每小时运行一次
+  workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 * * * *'  # 定时触发，每小时运行一次
 
-# 定义工作流程中的作业
 jobs:
   rss-to-issue:
-    # 定义运行环境
     runs-on: ubuntu-latest
     
-    # 定义作业中的步骤
     steps:
       - name: Checkout repository
-        # 使用 actions/checkout@v2 动作来检出仓库代码
         uses: actions/checkout@v2
-        
+      
       - name: Set up Python
-        # 使用 actions/setup-python@v3 动作来设置 Python 环境
         uses: actions/setup-python@v3
         with:
-          # 设置 Python 版本为 3.x
           python-version: '3.x'
           
       - name: Install dependencies
-        # 使用 Python 的 pip 来安装依赖
         run: |
-          # 升级 pip 到最新版本
           python -m pip install --upgrade pip
-          # 安装 feedparser 库
           pip install feedparser
       
       - name: Run RSS to Issue script
-        # 使用 Node.js 20 版本运行脚本
-        runs-on: 'node20'
-        # 指定脚本的入口文件
-        main: 'rss_to_issue.py'
-        # 设置环境变量
+        runs:
+          using: 'node20'
+          main: 'rss_to_issue.py'
         env:
-          # 使用 secrets.GITHUB_TOKEN 来获取 GitHub 令牌
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
