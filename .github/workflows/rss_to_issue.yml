@@ -1,0 +1,26 @@
+name: RSS to Issue
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时运行一次，可以根据需要调整频率
+
+jobs:
+  rss-to-issue:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: pip install feedparser
+        
+      - name: Run RSS to Issue script
+        run: python rss_to_issue.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
