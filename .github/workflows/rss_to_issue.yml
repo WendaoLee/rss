@@ -1,6 +1,7 @@
 name: RSS to Issue
 
 on:
+  workflow_dispatch: 
   schedule:
     - cron: '0 * * * *'  # 每小时运行一次，可以根据需要调整频率
 
