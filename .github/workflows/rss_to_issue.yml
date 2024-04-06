@@ -1,9 +1,9 @@
 name: RSS to Issue
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:  # 手动触发
   schedule:
-    - cron: '0 * * * *'  # 每小时运行一次，可以根据需要调整频率
+    - cron: '0 * * * *'  # 定时触发，每小时运行一次
 
 jobs:
   rss-to-issue:
@@ -11,10 +11,10 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # 更新为支持 Node.js 20 的版本
         
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v2.2.3  # 更新为支持 Node.js 20 的版本
         with:
           python-version: '3.x'
           
