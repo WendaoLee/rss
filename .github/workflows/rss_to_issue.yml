@@ -22,6 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install feedparser
+          pip install github
           
       - name: Run RSS to Issue script
         run: python rss_to_issue.py
