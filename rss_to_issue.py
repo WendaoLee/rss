@@ -8,7 +8,8 @@ REPO_NAME = 'rss'
 
 # RSS 订阅链接
 RSS_FEED_URLS = [
-    'https://unbug.github.io/feed.xml'
+    'https://unbug.github.io/feed.xml',
+    'https://www.ruanyifeng.com/blog/atom.xml'
 ]
 
 # 创建或更新 Issue
