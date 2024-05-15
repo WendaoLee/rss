@@ -8,8 +8,8 @@ REPO_NAME = 'rss'
 
 # RSS 订阅链接
 RSS_FEED_URLS = [
-    'https://unbug.github.io/feed.xml',
-    'https://www.ruanyifeng.com/blog/atom.xml',
+    # 'https://unbug.github.io/feed.xml',
+    # 'https://www.ruanyifeng.com/blog/atom.xml',
     'https://rsshub.app/jike/user/35224A78-8B11-469E-B307-16B58688FBEC'
 ]
 
@@ -38,6 +38,7 @@ def rss_to_issue():
     for url in RSS_FEED_URLS:
         feed = feedparser.parse(url)
         if not feed.entries:
+            print(f'url:{url} not parsed correctly')
             return
     
         latest_entry = feed.entries[0]
@@ -48,4 +49,5 @@ def rss_to_issue():
 
 
 if __name__ == '__main__':
+    # os.environ['GITHUB_TOKEN'] = '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'
     rss_to_issue()
