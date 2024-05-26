@@ -74,6 +74,9 @@ def rss_to_issue():
         if not feed.entries:
             print(f'url:{url} not parsed correctly,trying fetch another way')
             res = fetch_page(url)
+            if res is None:
+                print(f'url:{url} not parsed correctly')
+                continue
             feed = feedparser.parse(res)
             if not feed.entries:
                 print(f'url:{url} not parsed correctly')
