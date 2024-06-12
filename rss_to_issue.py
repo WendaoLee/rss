@@ -46,7 +46,9 @@ RSS_FEED_URLS = [
     'https://www.ruanyifeng.com/blog/atom.xml',
     'https://rsshub.app/jike/user/35224A78-8B11-469E-B307-16B58688FBEC',
     'https://radar.spacebar.org/f/a/weblog/rss/1',
-    'https://guangzhengli.com/index.xml'
+    'https://guangzhengli.com/index.xml',
+    'https://www.windytan.com/feeds/posts/default?alt=rss',
+    'https://blog.skk.moe/atom.xml'
 ]
 
 # 创建或更新 Issue
