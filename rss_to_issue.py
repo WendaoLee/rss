@@ -48,7 +48,8 @@ RSS_FEED_URLS = [
     'https://radar.spacebar.org/f/a/weblog/rss/1',
     'https://guangzhengli.com/index.xml',
     'https://www.windytan.com/feeds/posts/default?alt=rss',
-    'https://blog.skk.moe/atom.xml'
+    'https://blog.skk.moe/atom.xml',
+    'https://huggingface.co/blog/feed.xml'
 ]
 
 # 创建或更新 Issue
