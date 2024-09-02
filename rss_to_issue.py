@@ -50,7 +50,8 @@ RSS_FEED_URLS = [
     'https://www.windytan.com/feeds/posts/default?alt=rss',
     'https://blog.skk.moe/atom.xml',
     'https://huggingface.co/blog/feed.xml',
-    'https://baoyu.io/feed.xml'
+    'https://baoyu.io/feed.xml',
+    'https://alexharri.com/rss.xml'
 ]
 
 # 创建或更新 Issue
