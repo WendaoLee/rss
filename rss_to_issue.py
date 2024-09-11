@@ -51,7 +51,15 @@ RSS_FEED_URLS = [
     'https://blog.skk.moe/atom.xml',
     'https://huggingface.co/blog/feed.xml',
     'https://baoyu.io/feed.xml',
-    'https://alexharri.com/rss.xml'
+    'https://alexharri.com/rss.xml',
+    'https://rsshub.app/weibo/user/6827625527', # tomkeeper 
+    'https://rsshub.app/weibo/user/1401527553', # tomkeeper小号
+    'https://rsshub.app/weibo/user/5673920108', # 宫美老师
+    'https://rsshub.app/weibo/user/1655747731', # 梨叔
+    'https://rsshub.app/weibo/user/1871474290', # Transformer-周
+    'https://rsshub.app/weibo/user/1914643755', # 阅千人
+    'https://rsshub.app/weibo/user/2194035935', # 蚁工厂 
+    'https://rsshub.app/weibo/user/2214340953', # flanker
 ]
 
 # 创建或更新 Issue
