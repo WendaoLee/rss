@@ -52,6 +52,8 @@ RSS_FEED_URLS = [
     'https://huggingface.co/blog/feed.xml',
     'https://baoyu.io/feed.xml',
     'https://alexharri.com/rss.xml',
+    'https://sinja.io/rss',
+    'https://sinja.io/curated-bits/rss',
     'https://rsshub.app/weibo/user/6827625527', # tomkeeper 
     'https://rsshub.app/weibo/user/1401527553', # tomkeeper小号
     'https://rsshub.app/weibo/user/5673920108', # 宫美老师
