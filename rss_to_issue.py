@@ -60,6 +60,13 @@ RSS_FEED_URLS = [
     'https://rsshub.app/weibo/user/1914643755', # 阅千人
     'https://rsshub.app/weibo/user/2194035935', # 蚁工厂 
     'https://rsshub.app/weibo/user/2214340953', # flanker
+    'https://rsshub.app/zhihu/xhu/people/posts/90f376ff82194906b61dbd6041c8d13e', # KonKonjac 90f376ff82194906b61dbd6041c8d13e
+    'https://rsshub.app/zhihu/xhu/people/posts/b7734862be39b570374b4d89e058666a', # 罗宸 b7734862be39b570374b4d89e058666a
+    'https://rsshub.app/zhihu/xhu/people/posts/6676ea444bda2c703add8474963e800a',# 阅千人 6676ea444bda2c703add8474963e800a
+    'https://rsshub.app/zhihu/xhu/people/answers/90f376ff82194906b61dbd6041c8d13e',
+    'https://rsshub.app/zhihu/xhu/people/answers/b7734862be39b570374b4d89e058666a',
+    'https://rsshub.app/zhihu/xhu/people/answers/6676ea444bda2c703add8474963e800a',
+    
 ]
 
 # 创建或更新 Issue
